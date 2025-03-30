@@ -1,0 +1,95 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Question */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Options */
+.option {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background: #e0e0e0;
+}
+
+/* Correct & Wrong */
+.option.correct {
+    background: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}
+
+.option.wrong {
+    background: #f44336;
+    color: white;
+    border-color: #f44336;
+}
+
+/* Next Button */
+#next-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    display: none;
+}
+
+#next-btn:hover {
+    background: #556cd6;
+}
+
+/* Score */
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Responsive */
+@media(max-width: 500px) {
+    .quiz-container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #next-btn {
+        width: 100%;
+    }
+}
